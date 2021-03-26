@@ -25,3 +25,10 @@ run_new_email = Array.new(50) do |index|
 end
 
 print run_new_email.compact # compact me permet de réduire les sauts de ligne / les valeurs impairs sont échappée, seules les valeurs pairs seront affiché
+
+#   https://apidock.com/ruby/v1_9_3_392/Array/compact
+# compact() public
+# Returns a copy of self with all nil elements removed.
+
+# [ "a", nil, "b", nil, "c", nil ].compact
+#                   #=> [ "a", "b", "c" ]
