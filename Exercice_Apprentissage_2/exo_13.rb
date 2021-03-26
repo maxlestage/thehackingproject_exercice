@@ -12,14 +12,13 @@ firstname = "Max" #gets.chomp
 puts "Ainsi que ton nom?"
 lastname = "Lestage" #gets.chomp
 
-# my_array = []
 
 run_new_email = Array.new(50) do |index|
     index += 1
 
 
-   to_index = sprintf("%02d", index)
-    
+    to_index = sprintf("%02d", index) #   https://apidock.com/ruby/Kernel/sprintf
+
 
     address = "#{firstname.downcase}.#{lastname.downcase}.#{to_index}@email.fr"
     address_to_array = address.split(" ")
@@ -27,7 +26,3 @@ end
 
 
 puts run_new_email
-
-# 5.times do |index|
-#   puts index
-# end
