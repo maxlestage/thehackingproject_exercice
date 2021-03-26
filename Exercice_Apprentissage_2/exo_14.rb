@@ -16,7 +16,7 @@ lastname = "Lestage" #gets.chomp
 run_new_email = Array.new(50) do |index|
     index += 1
 
-    next if index.odd? 
+    next if index.odd? # Passe au suivant si impairs / odd? => false
 
     formatted_index = sprintf("%02d", index) #   https://apidock.com/ruby/Kernel/sprintf
 
@@ -24,4 +24,4 @@ run_new_email = Array.new(50) do |index|
 
 end
 
-print run_new_email.compact
+print run_new_email.compact # compact me permet de réduire les sauts de ligne / les valeurs impairs sont échappée, seules les valeurs pairs seront affiché
