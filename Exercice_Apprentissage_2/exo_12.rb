@@ -29,3 +29,24 @@ birth_year = final_year - final_age
 
   puts "En #{current_year}, Il y a #{year_ago} ans #{before_or_after} #{curent_age_text}"
 end
+
+# require 'date'
+
+# def pluralize(quantity, singular)
+#     quantity > 1 ? singular + "s" : singular
+# end
+
+# print "Salut tu peux nous donner ton age, on fait un test ? "
+# current_age = gets.chomp.to_i
+# current_year = Date.today.year
+
+# birth_year = current_year - current_age
+
+# birth_year.upto(Date.today.year).with_index do |year, age|
+#     have = current_year == year ? "as" : "avais"
+#     age_or_half = (age == current_age / 2) ? "la moitie de ton age" : "#{age} #{pluralize(age, "an")}"
+#     there_is = current_age - age
+#     which_year = current_year == year ? "cette annee" : "il y a #{there_is} #{pluralize(there_is, "an")}"
+
+#     puts "En #{year}, #{which_year}, tu #{have} #{age_or_half}"
+# end

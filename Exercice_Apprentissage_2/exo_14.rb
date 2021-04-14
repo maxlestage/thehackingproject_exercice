@@ -8,9 +8,9 @@
 
 puts "Salut! on test notre anti-spam, tu pourrais nous aider?"
 puts "Si tu es d'accord, tu peux saisir ton Prénom?"
-firstname = "Max" #gets.chomp
+firstname = gets.chomp
 puts "Ainsi que ton nom?"
-lastname = "Lestage" #gets.chomp
+lastname = gets.chomp
 
 
 run_new_email = Array.new(50) do |index|

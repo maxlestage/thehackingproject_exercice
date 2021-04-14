@@ -18,10 +18,6 @@ born.times do |y|  # y = years
     # if old == born 
     #     old = 0
 
-   
-
-    
-
     if date < 2020
         before = "tu avais"
     else
